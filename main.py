@@ -6,12 +6,10 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import relationship
 from flask_login import UserMixin, login_user, LoginManager, login_required, current_user, logout_user
 import smtplib
-
 from forms import CreatePostForm, CommentPostForm
 from flask_gravatar import Gravatar
 import datetime
 import os
-
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
